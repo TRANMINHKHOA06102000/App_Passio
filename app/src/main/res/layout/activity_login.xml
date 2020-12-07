@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+    <ImageView
+        android:id="@+id/imgcoffee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/backgr" />
+    <Button
+        android:id="@+id/bt_sdt"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/button_red"
+        android:text="Đăng nhập bằng số điện thoại"
+        android:textAllCaps="true"
+        android:textColor="#ffff"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_below="@+id/bt_sdt"
+        android:id="@+id/bt_fb"
+        android:layout_marginTop="20dp"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_blue"
+        android:text="Đăng nhập bằng facebook"
+        android:textAllCaps="true"
+        android:textColor="#ffff"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+</RelativeLayout>

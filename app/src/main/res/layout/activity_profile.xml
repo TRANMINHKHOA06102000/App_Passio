@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/header"
+        android:background="#FFFFFF"
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_baseline_keyboard_backspace" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:src="@drawable/user"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="22dp"
+            app:civ_border_color="#EDEDED"
+            app:civ_border_width="2dp" />
+        <RelativeLayout
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Trần Minh Khoa"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/phoneTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTv"
+                android:text="0357.740.062"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="#FFFFFF"
+                android:id="@+id/recommend"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/topPanel"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+                <RelativeLayout
+                    android:padding="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/recommendTv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thành viên mới"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rcmDcrpTv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/recommendTv1"
+                        android:text="0 điểm"
+                        android:textStyle="bold"
+                        android:textColor="#17DF1F"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/recommendTv2"
+                        android:layout_below="@+id/rcmDcrpTv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tài khoản Passio point"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/rcmDcrpTv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/recommendTv2"
+                        android:text="0 P"
+                        android:textColor="#17DF1F"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/listOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recommend"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/boderbot"
+                    android:drawableLeft="@drawable/ic_baseline_person_pin"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="5dp"
+                    android:text=" Thông tin cá nhân"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/boderbot"
+                    android:drawableLeft="@drawable/ic_baseline_local_shipping"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="5dp"
+                    android:text=" Địa chỉ giao hàng"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/boderbot"
+                    android:drawableLeft="@drawable/ic_baseline_local_offer"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="5dp"
+                    android:text=" Coupon của tôi"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/boderbot"
+                    android:drawableLeft="@drawable/ic_baseline_history"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="5dp"
+                    android:text=" Lịch sử đặt hàng"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/boderbot"
+                    android:drawableLeft="@drawable/ic_baseline_local_parking"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="5dp"
+                    android:text=" Về chúng tôi"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/boderbot"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="5dp"
+                    android:text=" Liên hệ"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/boderbot"
+                    android:drawableLeft="@drawable/ic_baseline_insert_drive_file"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="5dp"
+                    android:text=" Điều khoản sử dụng"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:text="Hotline: 1900 9434"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#434040"
+                android:text="$2018 Passio Coffee. Ver 1.07"/>
+            <TextView
+                android:id="@+id/logout"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FF0600"
+                android:textSize="18sp"
+                android:text="Đăng Xuất"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
